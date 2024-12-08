@@ -45,7 +45,7 @@ public class MainTest {
     @DisplayName("findDuplicates method doğru çalışıyor mu?")
     @Test
     public void testFindDuplicatesMethod() {
-        List<Employee> list = Main.findDuplicates(employees);
+        List<Employee> list = Main.findDuplicates((LinkedList<Employee>) employees);
         assertEquals(list.size(), 3);
         assertEquals(list.get(0).getFirstname(), "Dogancan");
     }
